@@ -1,0 +1,17 @@
+.home-button {
+  width: 27.5rem;
+  height: 7rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #707070;
+  margin: 0.938rem 0;
+
+  font-family: Roboto;
+  font-size: 3.125rem;
+}
+
+.home-button-text {
+  color: #000000;
+}
