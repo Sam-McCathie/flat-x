@@ -4,7 +4,7 @@ import Header from "../../shared/header/header";
 function login() {
   return (
     <div>
-      <Header />
+      <Header login="current-page" />
       <span>Login</span>
     </div>
   );

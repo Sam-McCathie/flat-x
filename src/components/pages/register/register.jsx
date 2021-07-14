@@ -4,7 +4,7 @@ import Header from "../../shared/header/header";
 function register() {
   return (
     <div>
-      <Header />
+      <Header register="current-page" />
       <span>Register</span>
     </div>
   );

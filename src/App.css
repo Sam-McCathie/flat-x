@@ -14,3 +14,7 @@ li {
   margin: 0;
   display: inline;
 }
+
+a {
+  text-decoration: none;
+}
