@@ -1,8 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 import "./register.css";
+import Axios from "axios";
 import Header from "../../shared/header/header";
 
-function register() {
+function Register() {
+  const [email, setEmail] = useState("");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
+  const addUser = () => {
+    Axios.post("http://localhost:3001/api/user/register", {
+      email: email,
+      username: username,
+      password: password,
+    });
+  };
+
   return (
     <div>
       <Header register="current-page" />
@@ -28,15 +41,24 @@ function register() {
                 <input
                   type="email"
                   className="register-input register-email-input"
+                  onChange={(event) => {
+                    setEmail(event.target.value);
+                  }}
                 />
                 <input
                   type="text"
                   className="register-input register-username-input"
+                  onChange={(event) => {
+                    setUsername(event.target.value);
+                  }}
                 />
 
                 <input
                   type="text"
                   className="register-input register-password-input"
+                  onChange={(event) => {
+                    setPassword(event.target.value);
+                  }}
                 />
               </div>
             </div>
@@ -45,6 +67,7 @@ function register() {
                 type="submit"
                 value="Register"
                 className="register-button"
+                onClick={addUser}
               />
             </div>
           </form>
@@ -54,4 +77,4 @@ function register() {
   );
 }
 
-export default register;
+export default Register;
