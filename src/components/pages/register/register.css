@@ -1,0 +1,73 @@
+.register-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16rem 0;
+  text-align: center;
+}
+
+.register-header {
+  font-size: 9.375rem;
+  font-family: Roboto;
+}
+
+.register-form {
+  display: flex;
+  margin: 40px 0;
+}
+
+.register-input-options,
+.register-inputs {
+  font-family: Roboto;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Left side of div */
+.register-input-options {
+  margin-right: 3.563rem;
+}
+
+.register-input-label,
+.register-input {
+  font-size: 2.5rem;
+}
+
+.register-input-label {
+  text-align: right;
+}
+
+.register-email-label {
+  margin: 1rem 0;
+}
+
+.register-username-label,
+.register-password-label {
+  margin: 2.125rem 0 1rem;
+}
+
+/*Right side of div*/
+.register-input {
+  width: 27.5rem;
+  height: 4.688rem;
+  color: #a4a4a4;
+}
+
+.register-email-input {
+  margin: 0 0 1.25rem;
+}
+
+.register-username-inpu,
+.register-password-input {
+  margin: 1.25rem 0 0;
+}
+
+/*Button */
+.register-button {
+  background-color: white;
+  font-family: Roboto;
+  font-size: 2.5rem;
+  padding: 1.313rem 6.563rem;
+  cursor: pointer;
+  border: 1px solid #707070;
+}
