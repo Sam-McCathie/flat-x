@@ -54,7 +54,7 @@ function Register() {
                 />
 
                 <input
-                  type="text"
+                  type="password"
                   className="register-input register-password-input"
                   onChange={(event) => {
                     setPassword(event.target.value);
