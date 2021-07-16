@@ -6,6 +6,7 @@ import home from "./components/pages/home/home";
 import login from "./components/pages/login/login";
 import register from "./components/pages/register/register";
 import dashboard from "./components/pages/dashboard/dashboard";
+import roster from "./components/pages/roster/roster";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/login" exact component={login} />
         <Route path="/register" exact component={register} />
         <Route path="/dashboard" exact component={dashboard} />
+        <Route path="/roster" exact component={roster} />
       </Switch>
     </Router>
   );

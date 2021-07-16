@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import Axios from "axios";
+import {Link} from "react-router-dom";
 import "./dashboard.css";
 import HeaderLoggedIn from "../../shared/header/header-logged-in";
 
@@ -28,6 +29,9 @@ function Dashboard() {
         <h1>Dashboard</h1>
         <p>Welcome: {user.username}</p>
         <p>My flat: {flat.flatName}</p>
+        <Link to="/roster">
+          <button>View roster</button>
+        </Link>
       </div>
     </div>
   );
