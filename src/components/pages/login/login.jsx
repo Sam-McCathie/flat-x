@@ -1,5 +1,6 @@
 import React from "react";
 // import React, {useState} from "react";
+import {Link} from "react-router-dom";
 import "./login.css";
 // import Axios from "axios";
 import Header from "../../shared/header/header";
@@ -51,13 +52,16 @@ function Login() {
                 />
               </div>
             </div>
+
             <div className="login-button-container">
-              <input
-                type="submit"
-                value="Login"
-                className="login-button"
-                // onClick={login}
-              />
+              <Link to="/dashboard">
+                <input
+                  type="submit"
+                  value="Login"
+                  className="login-button"
+                  // onClick={login}
+                />
+              </Link>
             </div>
           </form>
         </div>
